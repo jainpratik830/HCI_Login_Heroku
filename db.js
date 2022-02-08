@@ -6,7 +6,7 @@ module.exports = () => {
 		useUnifiedTopology: true,
 	};
 	try {
-		mongoose.connect(process.env.DB, connectionParams);
+		mongoose.connect('mongodb+srv://btechproject:btechproject@cluster0.70xo0.mongodb.net/mern-auth?retryWrites=true&w=majority',connectionParams);
 		console.log("Connected to database successfully");
 	} catch (error) {
 		console.log(error);
