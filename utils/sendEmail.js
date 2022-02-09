@@ -5,8 +5,8 @@ const SMTPClient = require('emailjs').SMTPClient;
 
 const client = new SMTPClient({
     host: "smtp.gmail.com",
-    user: 'btechproject2022@gmail.com',
-	pass: 'Btechproject2022!',
+    user: process.env.user,
+	pass: process.env.pass,
     ssl: true,
     port : 465
 });
